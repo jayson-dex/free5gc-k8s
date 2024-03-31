@@ -51,11 +51,11 @@ spec:
               protocol: UDP
           resources:
             requests:
-              memory: "100Mi"
-              cpu: "100m"
+              memory: "1000Mi"
+              cpu: "1000m"
             limits:
-              memory: "512Mi"
-              cpu: "250m"
+              memory: "5120Mi"
+              cpu: "2500m"
           securityContext:
             capabilities:
               add: ["NET_ADMIN"]
