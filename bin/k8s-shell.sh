@@ -49,7 +49,7 @@ else
   NAMESPACE=$2
 fi
 
-POD=$(kubectl get pods -n $NAMESPACE | grep "$POD_KEYWORD" | awk '{print $1}')
+POD=$(kubectl get pods -n $NAMESPACE | grep "$POD_KEYWORD" | head -n 1 | awk '{print $1}')
 
 if [ -z "$POD" ]
 then
