@@ -46,11 +46,11 @@ spec:
               name: nssf-volume
           resources:
             requests:
-              memory: "1000Mi"
-              cpu: "1000m"
+              memory: "1024Mi"
+              cpu: "500m"
             limits:
-              memory: "5120Mi"
-              cpu: "2500m"
+              memory: "2048Mi"
+              cpu: "1000m"
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       volumes:
